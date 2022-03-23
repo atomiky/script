@@ -46,10 +46,11 @@ def send_email(receiver, count, password):
         print(receiver)
 
 if __name__ == '__main__':
-    f = open("../unSignUser.txt", "r")
-    lines = f.readlines()
-    for i in range(0, len(lines)-1, 3):
-        send_email('412757277', 'tkyyds2@gmail.com', 'tk_Admin')
+    # f = open("../unSignUser.txt", "r")
+    # lines = f.readlines()
+    # for i in range(0, len(lines)-1, 3):
+    for i in range(0, 6, 3):
+        send_email('412757277@qq.com', 'tkyyds2@gmail.com', 'tk_Admin')
         time.sleep(random.uniform(180, 280))
         # send_email(lines[i+1], 'znxkys@zohomail.com', 'nx_Admin6688')
         # time.sleep(random.uniform(90, 150))
