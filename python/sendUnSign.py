@@ -36,7 +36,7 @@ def send_email(receiver, count, password):
     message['To'] = receiver
 
     # 关于ssl
-    server = smtplib.SMTP_SSL('smtp.zoho.com.cn', 25)
+    server = smtplib.SMTP_SSL('smtp.zoho.com.cn', 465)
     try:
         # 登陆邮箱，发送邮件退出登陆
         server.login(count, password)
@@ -47,7 +47,8 @@ def send_email(receiver, count, password):
         print(receiver)
 
 if __name__ == '__main__':
-    f = open("/var/atomiky/script/data/unSignUser.txt", "r")
+    # f = open("/var/atomiky/script/data/unSignUser.txt", "r")
+    f = open("../data/unSignUser.txt", "r")
     lines = f.readlines()
     for i in range(0, len(lines)-1, 5):
         print(lines[i])
