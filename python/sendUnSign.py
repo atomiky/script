@@ -31,7 +31,7 @@ def send_email(receiver, count, password):
 
     # 拼接邮件内容
     message = MIMEText(contant, "html", "utf-8")
-    message['Subject'] = "灵溪加速器 - vpn（升级版），专业网络加速服务，畅游海外网站，科学上网! 邮件编号:%s"%(random.randint(10000, 100000))
+    message['Subject'] = "灵溪加速器 - 专业网络加速服务，畅游海外网站，科学上网! 邮件编号:%s"%(random.randint(10000, 100000))
     message['From'] = sender
     message['To'] = receiver
 
@@ -48,13 +48,17 @@ def send_email(receiver, count, password):
 if __name__ == '__main__':
     f = open("/var/atomiky/script/data/unSignUser.txt", "r")
     lines = f.readlines()
-    for i in range(0, len(lines)-1, 3):
+    for i in range(0, len(lines)-1, 5):
         send_email(lines[i], 'nxkys01@zoho.com.cn', 'fVz3eH6vBj3u')
-        time.sleep(random.uniform(180, 280))
-        # send_email(lines[i+1], 'znxkys@zohomail.com', 'nx_Admin6688')
-        # time.sleep(random.uniform(90, 150))
-        # send_email(lines[i+2], 'lingxi@oneky.xyz', 'lingxi_Admin6688')
-        # time.sleep(random.uniform(95, 145))
+        time.sleep(random.uniform(432, 450))
+        send_email(lines[i+1], 'nxyyds@zoho.com.cn', 'H6EvV3hBEaVu')
+        time.sleep(random.uniform(420, 445))
+        send_email(lines[i+2], 'bestone@zoho.com.cn', 'D3PLnrLKAiss')
+        time.sleep(random.uniform(410, 460))
+        send_email(lines[i+3], 'ocbest@zoho.com.cn', 'ntEpKQfZBrdL')
+        time.sleep(random.uniform(400, 455))
+        send_email(lines[i+4], 'tkyyds@zoho.com.cn', 'W4pnjz1PZXRW')
+        time.sleep(random.uniform(405, 445))
 
 
 
