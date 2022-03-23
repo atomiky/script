@@ -46,7 +46,7 @@ def send_email(receiver, count, password):
         print(receiver)
 
 if __name__ == '__main__':
-    f = open("../data/unSignUser.txt", "r")
+    f = open("/var/atomiky/script/data/unSignUser.txt", "r")
     lines = f.readlines()
     for i in range(0, len(lines)-1, 3):
         send_email(lines[i], 'nxkys01@zoho.com.cn', 'fVz3eH6vBj3u')
