@@ -36,24 +36,22 @@ def send_email(receiver, count, password):
     message['To'] = receiver
 
     # 关于ssl
-    server = smtplib.SMTP_SSL('smtp.zoho.com', 465)
+    server = smtplib.SMTP_SSL('smtp.zoho.com.cn', 465)
     try:
         # 登陆邮箱，发送邮件退出登陆
         server.login(count, password)
         server.sendmail(sender, [receiver], message.as_string())
-        print("send mail")
         server.quit()
     except smtplib.SMTPException:
         print(receiver)
 
 if __name__ == '__main__':
-    f = open("/var/atomiky/script/data/unSignUser.txt", "r")
+    f = open("/var/send/script/data/unSignUser.txt", "r")
     # f = open("../data/unSignUser.txt", "r")
     lines = f.readlines()
     for i in range(0, len(lines)-1, 5):
         print(lines[i])
-        send_email(lines[i], 'nxyyds@zohomail.com', 'nx_Admin6688')
-        # send_email(lines[i], 'nxkys01@zoho.com.cn', 'fVz3eH6vBj3u')
+        send_email(lines[i], 'nxkys01@zoho.com.cn', 'fVz3eH6vBj3u')
         time.sleep(random.uniform(432, 450))
         send_email(lines[i+1], 'nxyyds@zoho.com.cn', 'H6EvV3hBEaVu')
         time.sleep(random.uniform(420, 445))
