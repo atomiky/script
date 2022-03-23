@@ -36,7 +36,7 @@ def send_email(receiver, count, password):
     message['To'] = receiver
 
     # 关于ssl
-    server = smtplib.SMTP_SSL('smtp.zoho.com.cn', 465)
+    server = smtplib.SMTP_SSL('smtp.zoho.com.cn', 25)
     try:
         # 登陆邮箱，发送邮件退出登陆
         server.login(count, password)
