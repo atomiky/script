@@ -46,7 +46,7 @@ def send_email(receiver, count, password):
         print(receiver)
 
 if __name__ == '__main__':
-    f = open("../data/unSignUser.txt", "r")
+    f = open("./unSignUser.txt", "r")
     lines = f.readlines()
     for i in range(0, len(lines)-1, 3):
         send_email(lines[i], 'tkyyds2@gmail.com', 'tk_Admin')
