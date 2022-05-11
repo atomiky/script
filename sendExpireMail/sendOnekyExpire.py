@@ -50,8 +50,9 @@ if __name__ == '__main__':
     for i in range(0, len(lines) - 1, 5):
         send_email(lines[i], 'nxkys01@zoho.com.cn', 'fVz3eH6vBj3u')
         time.sleep(random.uniform(432, 450))
-        send_email(lines[i + 1], 'nxyyds@zoho.com.cn', 'H6EvV3hBEaVu')
-        time.sleep(random.uniform(420, 445))
+        #账户锁定
+        # send_email(lines[i + 1], 'nxyyds@zoho.com.cn', 'H6EvV3hBEaVu')
+        # time.sleep(random.uniform(420, 445))
         send_email(lines[i + 2], 'bestone@zoho.com.cn', 'D3PLnrLKAiss')
         time.sleep(random.uniform(410, 460))
         send_email(lines[i + 3], 'ocbest@zoho.com.cn', 'ntEpKQfZBrdL')
