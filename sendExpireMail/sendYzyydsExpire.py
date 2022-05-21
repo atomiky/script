@@ -33,30 +33,34 @@ def send_email(receiver, count, password):
     message['From'] = sender
     message['To'] = receiver
 
-    # 关于ssl
-    server = smtplib.SMTP_SSL('smtp.zoho.com.cn', 465)
     try:
-        # 登陆邮箱，发送邮件退出登陆
-        server.login(count, password)
-        server.sendmail(sender, [receiver], message.as_string())
-        server.quit()
+        # tls加密方式，通信过程加密，邮件数据安全，使用正常的smtp端口
+        smtp = smtplib.SMTP('smtp.office365.com', 587)
+        smtp.set_debuglevel(True)
+        # smtp.ehlo()
+        smtp.starttls()
+        # smtp.ehlo()
+        smtp.login(count, password)
+        smtp.sendmail(sender, [receiver], message.as_string())
+        smtp.close()
+
     except smtplib.SMTPException:
         print(receiver)
 
 if __name__ == '__main__':
-    f = open("/var/sendMail/script/data/yzyydsExpire.txt", "r")
+    f = open("/var/sendMail/script/data/yzyyds521Expire.txt", "r")
     # f = open("../data/unSignUser.txt", "r")
     lines = f.readlines()
     for i in range(0, len(lines) - 1, 5):
-        send_email(lines[i], 'nxkys01@zoho.com.cn', 'fVz3eH6vBj3u')
+        send_email(lines[i], 'mvbert@outlook.com', 'Huin123456')
         time.sleep(random.uniform(432, 450))
-        send_email(lines[i + 1], 'nxyyds@zoho.com.cn', 'H6EvV3hBEaVu')
+        send_email(lines[i + 1], 'scmnvr@outlook.com', 'Huin123456')
         time.sleep(random.uniform(420, 445))
-        send_email(lines[i + 2], 'bestone@zoho.com.cn', 'D3PLnrLKAiss')
+        send_email(lines[i + 2], 'uterncv@outlook.com', 'Tiun123456')
         time.sleep(random.uniform(410, 460))
-        send_email(lines[i + 3], 'ocbest@zoho.com.cn', 'ntEpKQfZBrdL')
+        send_email(lines[i + 3], 'iurtdcd@outlook.com', 'Tiun123456')
         time.sleep(random.uniform(400, 455))
-        send_email(lines[i + 4], 'tkyyds@zoho.com.cn', 'W4pnjz1PZXRW')
+        send_email(lines[i + 4], 'uternbr@outlook.com', 'Tiun123456')
         time.sleep(random.uniform(405, 445))
 
 
