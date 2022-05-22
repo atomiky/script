@@ -52,7 +52,7 @@ if __name__ == '__main__':
     # f = open("../data/unSignUser.txt", "r")
     lines = f.readlines()
     for i in range(0, len(lines) - 1, 5):
-        send_email(lines[i], 'mvbert@outlook.com', 'Huin123456')
+        send_email(lines[i], 'tnmcer@outlook.com', 'Endc98765')
         time.sleep(random.uniform(432, 450))
         send_email(lines[i + 1], 'scmnvr@outlook.com', 'Huin123456')
         time.sleep(random.uniform(420, 445))
