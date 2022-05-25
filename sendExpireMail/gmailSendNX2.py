@@ -54,7 +54,7 @@ if __name__ == '__main__':
     # f = open("../data/nxUnSingIN2.txt", "r")
     lines = f.readlines()
     for i in range(0, len(lines) - 1, 5):
-        send_email(lines[i], 'jamaarjcdakhb@gmail.com', 'qoGPR6428')
+        send_email(lines[i], 'tkyyds2@gmail.com', 'tk_Admin')
         time.sleep(random.uniform(432, 450))
         send_email(lines[i + 1], 'ellisonhowellljgkbpd76@gmail.com', 'nx_Admin')
         time.sleep(random.uniform(420, 445))
@@ -62,7 +62,7 @@ if __name__ == '__main__':
         time.sleep(random.uniform(410, 460))
         send_email(lines[i + 3], 'HalSwiftbxh25@gmail.com', 'mexciko86gvha')
         time.sleep(random.uniform(400, 455))
-        send_email(lines[i + 4], 'tkyyds2@gmail.com', 'tk_Admin')
+        send_email(lines[i + 4], 'jamaarjcdakhb@gmail.com', 'qoGPR6428')
         time.sleep(random.uniform(405, 445))
 
 
