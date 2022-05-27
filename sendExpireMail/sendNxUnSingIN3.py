@@ -42,7 +42,7 @@ def send_email(receiver, count, password):
     try:
         # 登陆邮箱，发送邮件退出登陆
         server.login(count, password)
-        server.sendmail(sender, [receiver], message.as_string())
+        server.sendmail("灵溪加速器-nxkys.com", [receiver], message.as_string())
         server.quit()
     except smtplib.SMTPException as e:
         print(e)
@@ -55,9 +55,9 @@ if __name__ == '__main__':
     for i in range(0, len(lines) - 1, 3):
         send_email(lines[i], 'jhdcbmav@zohomail.jp', 'YLLzx2elI6EG')
         time.sleep(random.uniform(632, 850))
-        send_email(lines[i + 2], 'nnyikbi@zohomail.jp', '7HeyHdb4Wptm')
+        send_email(lines[i + 1], 'nnyikbi@zohomail.jp', '7HeyHdb4Wptm')
         time.sleep(random.uniform(610, 760))
-        send_email(lines[i + 3], 'djtnysvjb@zohomail.jp', 'qn8088c0qFU1')
+        send_email(lines[i + 2], 'djtnysvjb@zohomail.jp', 'qn8088c0qFU1')
         time.sleep(random.uniform(510, 740))
 
 
