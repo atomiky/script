@@ -42,7 +42,7 @@ def send_email(receiver, count, password):
     try:
         # 登陆邮箱，发送邮件退出登陆
         server.login(count, password)
-        server.sendmail("灵溪加速器-nxkys.com", [receiver], message.as_string())
+        server.sendmail(sender, [receiver], message.as_string())
         server.quit()
     except smtplib.SMTPException as e:
         print(e)
