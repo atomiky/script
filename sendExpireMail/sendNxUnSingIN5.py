@@ -49,7 +49,7 @@ def send_email(receiver, count, password):
         print(receiver)
 
 if __name__ == '__main__':
-    f = open("/var/sendMail/script/data/nxUnSingIN5.txt", "r")
+    f = open("/var/sendMail/script/data/nxUnSignIN5.txt", "r")
     # f = open("../data/nxUnSingIN3.txt", "r")
     lines = f.readlines()
     for i in range(0, len(lines) - 1, 3):
