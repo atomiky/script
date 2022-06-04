@@ -20,8 +20,10 @@ def send_email(receiver, count, password):
     		<font color="red" size=4>砖石套餐：</font><font color="Purple" size=3>美国，日本，韩国，香港，新加坡等节点，支持8k视频，月付价格:</font><font color="red"size=5>18元</font>
     		<br><br>
     		<font color="red" size=4>官方网址：</font> <a href="https://nxkys.com" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.nxkys.com&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://nxkys.com</a><div class="yj6qo"></div><div class="adL">
+           <br><br>
+            <font color="red" size=4>复制上面官方网址去浏览器打开</font>
             <br><br>
-            --> <a href="https://nxkys.com" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.nxkys.com&amp;source=gmail&amp;ust=1638599219093000&amp;usg=AOvVaw1_o00JKGkAtJHfAIdy040a">点击登录官网</a><--
+    		<font color="Blue" size=4>灵溪防走失网址：</font> <a href="https://awkys.github.io" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://awkys.github.io&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://awkys.github.io</a><div class="yj6qo"></div><div class="adL">
             <br><br>
             有疑问，请联系网站右下角在线客服
             <br> <br>
@@ -38,7 +40,7 @@ def send_email(receiver, count, password):
     message['To'] = receiver
 
     # 关于ssl
-    server = smtplib.SMTP_SSL('smtp.zoho.jp', 465)
+    server = smtplib.SMTP_SSL('smtp.zoho.com.cn', 465)
     try:
         # 登陆邮箱，发送邮件退出登陆
         server.login(count, password)
