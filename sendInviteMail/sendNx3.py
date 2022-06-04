@@ -55,11 +55,11 @@ if __name__ == '__main__':
     # f = open("../data/nxUnSingIN3.txt", "r")
     lines = f.readlines()
     for i in range(0, len(lines) - 1, 3):
-        send_email(lines[i], 'ttavmgaee@zohomail.jp', '7o5OIu42lhZ3')
+        send_email(lines[i], 'mail1@tkyer.xyz', 'nx_Admin123')
         time.sleep(random.uniform(632, 850))
-        send_email(lines[i + 1], 'pulijhas@zohomail.jp', 'Ly4thB7P56DC')
+        send_email(lines[i + 1], 'mail2@tkyer.xyz', 'nx_Admin123')
         time.sleep(random.uniform(610, 760))
-        send_email(lines[i + 2], 'ydinqfhm@zohomail.jp', 'sOG73K45052B')
+        send_email(lines[i + 2], 'mail3@tkyer.xyz', 'nx_Admin123')
         time.sleep(random.uniform(510, 740))
 
 
