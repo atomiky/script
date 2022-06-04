@@ -9,21 +9,21 @@ def send_email(receiver, count, password):
     sender = count
 
     contant = """<div dir="ltr">
-            ﻿<font color="Blue" size=4>亲亲，灵溪加速器，专业海外团队运营，稳定运行五年!</font>
+            ﻿<font color="Blue" size=4>亲，灵溪加速器，专业团队运营，稳定运行六年!</font>
     		<br><br>
     		<font color="Purple" size=4>畅游Google, Youtube, Facebook, Twitter, Instagram, 谷歌学术等海外网站</font>
     		<br><br>
     		<font color="Blue" size=4>支持 苹果（iphone, Mac），安卓，电脑等客户端</font>
     		<br><br>
-    		<font color="red" size=4>黄金套餐：</font><font color="Purple" size=3>美国，日本，新加坡节点，支持4k视频，月付价格:</font><font color="red" size=5>12元</font>
+    		<font color="red" size=4>黄金套餐：</font><font color="Purple" size=3>美国，日本，新加坡等节点，支持4k视频，月付价格:</font><font color="red" size=5>12元</font>
     		<br><br>
-    		<font color="red" size=4>砖石套餐：</font><font color="Purple" size=3>美国，日本，香港，新加坡,韩国等节点，支持8k视频，月付价格:</font><font color="red"size=5>18元</font>
+    		<font color="red" size=4>砖石套餐：</font><font color="Purple" size=3>美国，日本，韩国，香港，新加坡等节点，支持8k视频，月付价格:</font><font color="red"size=5>18元</font>
     		<br><br>
     		<font color="red" size=4>官方网址：</font> <a href="https://nxkys.com" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.nxkys.com&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://nxkys.com</a><div class="yj6qo"></div><div class="adL">
             <br><br>
             --> <a href="https://nxkys.com" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.nxkys.com&amp;source=gmail&amp;ust=1638599219093000&amp;usg=AOvVaw1_o00JKGkAtJHfAIdy040a">点击登录官网</a><--
             <br><br>
-            有疑问，请联系网站右下角在线客服！
+            有疑问，请联系网站右下角在线客服
             <br> <br>
     		邮件发送时间：<font color="darkred">%s</font>
     		<br><br>
@@ -33,7 +33,7 @@ def send_email(receiver, count, password):
 
     # 拼接邮件内容
     message = MIMEText(contant, "html", "utf-8")
-    message['Subject'] = "灵溪加速器 - 科学上网，提供专业海外网络加速服务，畅游海外网站!邮件编号:%s"%(random.randint(10000, 100000))
+    message['Subject'] = "灵溪加速器 - 科学上网,提供专业海外网络加速服务，畅游海外网站!邮件编号:%s"%(random.randint(10000, 100000))
     message['From'] = sender
     message['To'] = receiver
 
@@ -49,15 +49,15 @@ def send_email(receiver, count, password):
         print(receiver)
 
 if __name__ == '__main__':
-    f = open("/var/sendMail/script/data/nxUnSignIN5.txt", "r")
+    f = open("/var/script/data/invite/nx6.txt", "r")
     # f = open("../data/nxUnSingIN3.txt", "r")
     lines = f.readlines()
     for i in range(0, len(lines) - 1, 3):
-        send_email(lines[i], 'ttavmgaee@zohomail.jp', '7o5OIu42lhZ3')
+        send_email(lines[i], 'fksyzkrw@zohomail.jp', 'KMBgqLXshgs3')
         time.sleep(random.uniform(632, 850))
-        send_email(lines[i + 1], 'pulijhas@zohomail.jp', 'Ly4thB7P56DC')
+        send_email(lines[i + 1], 'opwhhuf@zohomail.jp', 'ftVd75V80h0Q')
         time.sleep(random.uniform(610, 760))
-        send_email(lines[i + 2], 'ydinqfhm@zohomail.jp', 'sOG73K45052B')
+        send_email(lines[i + 2], 'mtdshnylh@zohomail.jp', '51Pl6bx6iu3F')
         time.sleep(random.uniform(510, 740))
 
 
