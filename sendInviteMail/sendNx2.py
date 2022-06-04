@@ -21,7 +21,9 @@ def send_email(receiver, count, password):
     		<br><br>
     		<font color="red" size=4>官方网址：</font> <a href="https://nxkys.com" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.nxkys.com&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://nxkys.com</a><div class="yj6qo"></div><div class="adL">
             <br><br>
-            --> <a href="https://nxkys.com" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.nxkys.com&amp;source=gmail&amp;ust=1638599219093000&amp;usg=AOvVaw1_o00JKGkAtJHfAIdy040a">点击登录官网</a><--
+            <font color="red" size=4>复制上面官方网址去浏览器打开</font>
+            <br><br>
+    		<font color="Blue" size=4>灵溪防走失网址：</font> <a href="https://awkys.github.io" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://awkys.github.io&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://awkys.github.io</a><div class="yj6qo"></div><div class="adL">
             <br><br>
             如有疑问，请联系网站右下角在线客服!!!
             <br> <br>
@@ -50,15 +52,18 @@ def send_email(receiver, count, password):
 
 if __name__ == '__main__':
     f = open("/var/script/data/invite/nx2.txt", "r")
-    # f = open("../data/nxUnSingIN3.txt", "r")
+    # f = open("../data/invite/nx2.txt", "r")
     lines = f.readlines()
-    for i in range(0, len(lines) - 1, 3):
-        send_email(lines[i], 'kfrdswe@zohomail.jp', '91Zn2R8899Jv')
+    for user in lines:
+        send_email(user, 'hi@entkys.xyz', 'nx_Admin123')
         time.sleep(random.uniform(632, 850))
-        send_email(lines[i + 1], 'jpmnbzmwo@zohomail.jp', 'Ns2qyFq3uXpt')
-        time.sleep(random.uniform(610, 760))
-        send_email(lines[i + 2], 'oznfiche@zohomail.jp', 'MQ5ZSYQe2b47')
-        time.sleep(random.uniform(510, 740))
+    # for i in range(0, len(lines) - 1, 3):
+    #     send_email(lines[i], 'kfrdswe@zohomail.jp', '91Zn2R8899Jv')
+    #     time.sleep(random.uniform(632, 850))
+    #     send_email(lines[i + 1], 'jpmnbzmwo@zohomail.jp', 'Ns2qyFq3uXpt')
+    #     time.sleep(random.uniform(610, 760))
+    #     send_email(lines[i + 2], 'oznfiche@zohomail.jp', 'MQ5ZSYQe2b47')
+    #     time.sleep(random.uniform(510, 740))
 
 
 
