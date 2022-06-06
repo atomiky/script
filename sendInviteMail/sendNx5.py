@@ -54,13 +54,16 @@ if __name__ == '__main__':
     f = open("/var/script/data/invite/nx5.txt", "r")
     # f = open("../data/nxUnSingIN3.txt", "r")
     lines = f.readlines()
-    for i in range(0, len(lines) - 1, 3):
-        send_email(lines[i], 'ghhlaaryc@zohomail.jp', 'VO775NRy6LA3')
+    for user in lines:
+        send_email(user, 'hi@yzyyds.xyz', 'nx_Admin123')
         time.sleep(random.uniform(632, 850))
-        send_email(lines[i + 1], 'xemsfiz@zohomail.jp', '8bOm28Q4iXSb')
-        time.sleep(random.uniform(610, 760))
-        send_email(lines[i + 2], 'vvywoxkfi@zohomail.jp', 'PW7fM5eIv08t')
-        time.sleep(random.uniform(510, 740))
+    # for i in range(0, len(lines) - 1, 3):
+    #     send_email(lines[i], 'ghhlaaryc@zohomail.jp', 'VO775NRy6LA3')
+    #     time.sleep(random.uniform(632, 850))
+    #     send_email(lines[i + 1], 'xemsfiz@zohomail.jp', '8bOm28Q4iXSb')
+    #     time.sleep(random.uniform(610, 760))
+    #     send_email(lines[i + 2], 'vvywoxkfi@zohomail.jp', 'PW7fM5eIv08t')
+    #     time.sleep(random.uniform(510, 740))
 
 
 
