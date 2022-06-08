@@ -48,7 +48,7 @@ if __name__ == '__main__':
     # f = open("../data/unSignUser.txt", "r")
     lines = f.readlines()
     for user in lines:
-        send_email(user, 'expired@nxyyds.xyz', 'nx_Admin123')
+        send_email(user, 'expired@nxbest.men', 'nx_Admin123')
         time.sleep(random.uniform(632, 850))
     # for i in range(0, len(lines) - 1, 5):
     #     send_email(lines[i], 'nxkys01@zoho.com.cn', 'fVz3eH6vBj3u')
