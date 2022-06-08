@@ -9,17 +9,17 @@ def send_email(receiver, count, password):
     sender = count
 
     contant = """<div dir="ltr">
-        ﻿亲，你好，您在本站的账户<font color="red">已经过期!</font>
+        ﻿亲，你好，您在本站的账户<font color="red">已经过期了</font>
         <br><br>
-        为不影响您正常使用，请登录网站购买套餐<br><br>
+        为不影响您正常使用，请登录网站购买套餐<<br><br>
 		续费请 <a href="https://www.oneky.xyz" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.oneky.xyz&amp;source=gmail&amp;ust=1638599219093000&amp;usg=AOvVaw1_o00JKGkAtJHfAIdy040a">登录官网</a>，点击<font color="red">'购买套餐'</font> <br> <br>
 		续费后请<font color="red">稍等两分钟,</font>然后重新连接客户端 <br> <br>
-		官方网址： <a href="https://www.oneky.xyz" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.oneky.xyz&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://www.oneky.xyz</a><div class="yj6qo"></div><div class="adL"> <br>
-        复制上方链接去浏览器打开
+		官方网址： <a href="https://www.oneky.xyz" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.oneky.xyz&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://www.oneky.xyz</a><div class="yj6qo"></div><div class="adL"> <br><br>
+        请复制上方链接去浏览器打开
         <br> <br>
         有疑问，请联系网站右下角在线客服。
 		<br><br>
-		网络加速器，畅游Google, Youtube, Facebook, Twitter, Instagram, 谷歌学术等海外网站
+		网络加速器，可浏览Google, Youtube, Facebook, Twitter, Instagram, 谷歌学术等海外网站
 		<br><br>
         此次邮件发送时间：<font color="darkred">%s</font>
         """%(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime()))
@@ -27,7 +27,7 @@ def send_email(receiver, count, password):
 
     # 拼接邮件内容
     message = MIMEText(contant, "html", "utf-8")
-    message['Subject'] = "小火箭加速器 - 账号过期提醒 ~ 邮件编号:%s"%(random.randint(10000, 100000))
+    message['Subject'] = "小火箭 - 账号过期提醒 ~ 您的邮件编号为:%s"%(random.randint(10000, 100000))
     message['From'] = sender
     message['To'] = receiver
 
