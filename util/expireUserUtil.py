@@ -29,10 +29,10 @@ def getExpireUser(db):
 
 
 if __name__ == '__main__':
-    db = "yzyyds521"
+    db = "oneky608"
     user = getExpireUser(db)
     expireUser = []
-    url = "../data/" + db + "Expire.txt"
+    url = "../data/expire/" + db + "Expire.txt"
     for i in set(user):
         expireUser.append(i + ',' + "\n")
     f = open(url, "w")

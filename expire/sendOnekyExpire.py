@@ -44,21 +44,24 @@ def send_email(receiver, count, password):
         print(receiver)
 
 if __name__ == '__main__':
-    f = open("/var/sendMail/script/data/onekyExpire.txt", "r")
+    f = open("/var/script/data/expire/oneky608Expire.txt", "r")
     # f = open("../data/unSignUser.txt", "r")
     lines = f.readlines()
-    for i in range(0, len(lines) - 1, 5):
-        send_email(lines[i], 'nxkys01@zoho.com.cn', 'fVz3eH6vBj3u')
-        time.sleep(random.uniform(432, 450))
-        #账户锁定
-        # send_email(lines[i + 1], 'nxyyds@zoho.com.cn', 'H6EvV3hBEaVu')
-        # time.sleep(random.uniform(420, 445))
-        send_email(lines[i + 2], 'bestone@zoho.com.cn', 'D3PLnrLKAiss')
-        time.sleep(random.uniform(410, 460))
-        send_email(lines[i + 3], 'ocbest@zoho.com.cn', 'ntEpKQfZBrdL')
-        time.sleep(random.uniform(400, 455))
-        send_email(lines[i + 4], 'tkyyds@zoho.com.cn', 'W4pnjz1PZXRW')
-        time.sleep(random.uniform(405, 445))
+    for user in lines:
+        send_email(user, 'expired@nxyyds.xyz', 'nx_Admin123')
+        time.sleep(random.uniform(632, 850))
+    # for i in range(0, len(lines) - 1, 5):
+    #     send_email(lines[i], 'nxkys01@zoho.com.cn', 'fVz3eH6vBj3u')
+    #     time.sleep(random.uniform(432, 450))
+    #     #账户锁定
+    #     # send_email(lines[i + 1], 'nxyyds@zoho.com.cn', 'H6EvV3hBEaVu')
+    #     # time.sleep(random.uniform(420, 445))
+    #     send_email(lines[i + 2], 'bestone@zoho.com.cn', 'D3PLnrLKAiss')
+    #     time.sleep(random.uniform(410, 460))
+    #     send_email(lines[i + 3], 'ocbest@zoho.com.cn', 'ntEpKQfZBrdL')
+    #     time.sleep(random.uniform(400, 455))
+    #     send_email(lines[i + 4], 'tkyyds@zoho.com.cn', 'W4pnjz1PZXRW')
+    #     time.sleep(random.uniform(405, 445))
 
 
 

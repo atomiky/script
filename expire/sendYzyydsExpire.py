@@ -35,7 +35,7 @@ def send_email(receiver, count, password):
 
     try:
         # tls加密方式，通信过程加密，邮件数据安全，使用正常的smtp端口
-        smtp = smtplib.SMTP('smtp.office365.com', 587)
+        smtp = smtplib.SMTP('smtp.zoho.com.cn', 587)
         smtp.set_debuglevel(True)
         # smtp.ehlo()
         smtp.starttls()
@@ -48,20 +48,23 @@ def send_email(receiver, count, password):
         print(receiver)
 
 if __name__ == '__main__':
-    f = open("/var/sendMail/script/data/yzyyds521Expire.txt", "r")
+    f = open("/var/script/data/expire/yz608Expire.txt", "r")
     # f = open("../data/unSignUser.txt", "r")
     lines = f.readlines()
-    for i in range(0, len(lines) - 1, 5):
-        send_email(lines[i], 'tnmcer@outlook.com', 'Endc98765')
-        time.sleep(random.uniform(432, 450))
-        send_email(lines[i + 1], 'scmnvr@outlook.com', 'Huin123456')
-        time.sleep(random.uniform(420, 445))
-        send_email(lines[i + 2], 'uterncv@outlook.com', 'Tiun123456')
-        time.sleep(random.uniform(410, 460))
-        send_email(lines[i + 3], 'iurtdcd@outlook.com', 'Tiun123456')
-        time.sleep(random.uniform(400, 455))
-        send_email(lines[i + 4], 'uternbr@outlook.com', 'Tiun123456')
-        time.sleep(random.uniform(405, 445))
+    for user in lines:
+        send_email(user, 'expired@avanter.xyz', 'nx_Admin123')
+        time.sleep(random.uniform(632, 850))
+    # for i in range(0, len(lines) - 1, 5):
+    #     send_email(lines[i], 'tnmcer@outlook.com', 'Endc98765')
+    #     time.sleep(random.uniform(432, 450))
+    #     send_email(lines[i + 1], 'scmnvr@outlook.com', 'Huin123456')
+    #     time.sleep(random.uniform(420, 445))
+    #     send_email(lines[i + 2], 'uterncv@outlook.com', 'Tiun123456')
+    #     time.sleep(random.uniform(410, 460))
+    #     send_email(lines[i + 3], 'iurtdcd@outlook.com', 'Tiun123456')
+    #     time.sleep(random.uniform(400, 455))
+    #     send_email(lines[i + 4], 'uternbr@outlook.com', 'Tiun123456')
+    #     time.sleep(random.uniform(405, 445))
 
 
 
