@@ -17,7 +17,9 @@ def send_email(receiver, count, password):
 		官方网址： <a href="https://www.oneky.xyz" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.oneky.xyz&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://www.oneky.xyz</a><div class="yj6qo"></div><div class="adL"> <br><br>
         请复制上方链接去浏览器打开
         <br> <br>
-        有疑问，请联系网站右下角在线客服。
+        如有疑问，请联系网站右下角在线客服！
+		<br><br>
+		已解锁p站，奈飞等海外网站!!!
 		<br><br>
 		浏览Google, Youtube, Facebook, Twitter, Instagram, 谷歌学术等海外网站
 		<br><br>
@@ -29,7 +31,7 @@ def send_email(receiver, count, password):
 
     # 拼接邮件内容
     message = MIMEText(contant, "html", "utf-8")
-    message['Subject'] = "小火箭加速器 - 账号过期提醒，您的邮件编号为:%s"%(random.randint(10000, 100000))
+    message['Subject'] = "小火箭加速器 - 您的账号已过期，您的邮件编号为:%s"%(random.randint(10000, 100000))
     message['From'] = sender
     message['To'] = receiver
 
@@ -48,7 +50,7 @@ if __name__ == '__main__':
     # f = open("../data/unSignUser.txt", "r")
     lines = f.readlines()
     for user in lines:
-        send_email(user, 'expired@nxbest.men', 'nx_Admin123')
+        send_email(user, 'yyds@nxyyds.xyz', 'nx_Admin123')
         time.sleep(random.uniform(632, 850))
     # for i in range(0, len(lines) - 1, 5):
     #     send_email(lines[i], 'nxkys01@zoho.com.cn', 'fVz3eH6vBj3u')
