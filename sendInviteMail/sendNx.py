@@ -11,17 +11,17 @@ def send_email(receiver, count, password):
     contant = """<div dir="ltr">
             ﻿亲，灵溪加速器，专业团队运营，稳定运行六年!
     		<br><br>
-    		<font color="darkred" size=3>畅游Google, Youtube, Facebook, Twitter, Instagram, 谷歌学术等海外网站</font>
+    		畅游Google, Youtube, Facebook, Twitter, Instagram, 谷歌学术等海外网站
     		<br><br>
-    		<font color="Blue" size=4>支持 苹果，安卓，电脑等客户端同时连接!</font>
+    		支持 苹果，安卓，电脑等客户端同时连接!
     		<br><br>
-    		<font color="red" size=4>黄金套餐：</font><font color="Purple" size=3>美国，日本，新加坡等国家节点，月付价格低至:</font><font color="red" size=5>12元</font>
+    		黄金套餐：</font><font color="Purple" size=3>美国，日本，新加坡等国家节点，月付价格低至:12元
     		<br><br>
-    		<font color="green" size=4>砖石套餐：</font><font color="Purple" size=3>美国，日本，香港，韩国，新加坡等国家节点，支持8k视频，月付价格低至:</font><font color="red"size=5>18元</font>
+    		砖石套餐：</font><font color="Purple" size=3>美国，日本，香港，韩国，新加坡等国家节点，支持8k视频，月付价格低至:18元
     		<br><br>
     		<font color="red" size=4>官方网址：</font> <a href="https://nxkys.com" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.nxkys.com&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://nxkys.com</a><div class="yj6qo"></div><div class="adL">
             <br><br>
-            <font color="red" size=4>复制上面官方网址去浏览器打开</font>
+            复制上面官方网址去浏览器打开
             <br><br>
             已解锁p站，奈飞等网站!!!
             <br><br>
@@ -37,7 +37,7 @@ def send_email(receiver, count, password):
 
     # 拼接邮件内容
     message = MIMEText(contant, "html", "utf-8")
-    message['Subject'] = "灵溪加速器 - 专业海外网络加速服务，科学上网·邮件编号:%s"%(random.randint(10000, 100000))
+    message['Subject'] = "灵溪加速器 - 专业海外网络加速服务***邮件编号:%s"%(random.randint(10000, 100000))
     message['From'] = sender
     message['To'] = receiver
 
@@ -57,7 +57,7 @@ if __name__ == '__main__':
     # f = open("../data/nxUnSingIN3.txt", "r")
     lines = f.readlines()
     for user in lines:
-        send_email(user, 'invite@yzyyds.xyz', 'nx_Admin123')
+        send_email(user, 'nx@yzyyds.xyz', 'nx_Admin123')
         time.sleep(random.uniform(632, 850))
     # for i in range(0, len(lines) - 1, 3):
         # send_email(lines[i], 'jhdcbmav@zohomail.jp', 'YLLzx2elI6EG')
