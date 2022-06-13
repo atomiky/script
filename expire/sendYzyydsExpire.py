@@ -29,7 +29,7 @@ def send_email(receiver, count, password):
 
     # 拼接邮件内容
     message = MIMEText(contant, "html", "utf-8")
-    message['Subject'] = "柚子加速器%%%账户过期提醒&邮件编号:%s"%(random.randint(10000, 100000))
+    message['Subject'] = "柚子加速器--海外网络加速账号过期提醒&邮件编号为:%s"%(random.randint(4000, 80000))
     message['From'] = sender
     message['To'] = receiver
 
