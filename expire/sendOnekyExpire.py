@@ -17,7 +17,9 @@ def send_email(receiver, count, password):
 		官方网址： <a href="https://www.oneky.xyz" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.oneky.xyz&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://www.oneky.xyz</a><div class="yj6qo"></div><div class="adL"> <br><br>
         请复制上方链接去浏览器打开
         <br> <br>
+        *********************
         如有疑问，请联系网站右下角在线客服！
+        *********************
 		<br><br>
 		<font color="red">
 		已经解锁p站，奈飞等海外网站!!!
