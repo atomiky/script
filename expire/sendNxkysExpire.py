@@ -11,14 +11,18 @@ def send_email(receiver, count, password):
     contant = """<div dir="ltr">
         ﻿亲，为不影响您正常使用，请登录网站购买套餐<
         <br><br>
+        -----------------------------------------------
         您在本站的账户<font color="darkred">已经过期</font>!
         <br><br>
         续费请 <a href="https://nxkys.com" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://nxkys.com&amp;source=gmail&amp;ust=1638599219093000&amp;usg=AOvVaw1_o00JKGkAtJHfAIdy040a">登录官网</a>，点击<font color="red">'购买套餐'</font> <br> <br>
         续费后请<font color="red">稍等两分钟,</font>然后重新连接客户端 <br> <br>
+        …………………………………………………………………………………………………………………………………………
         灵溪官方网址： <a href="https://nxkys.com" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://nxkys.com&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://nxkys.com</a><div class="yj6qo"></div><div class="adL"> <br> <br>
         请复制上面方地址，去浏览器打开访问
         <br> <br>
+        ********************
         已经解锁p站，奈飞等网站!
+        ********************
         <br> <br>
         如有疑问，请联系网站右下角在线客服 
 		<br><br>
@@ -30,7 +34,7 @@ def send_email(receiver, count, password):
 
     # 拼接邮件内容
     message = MIMEText(contant, "html", "utf-8")
-    message['Subject'] = "灵溪加速器***海外网络加速账户过期提醒！ 邮件编号:%s"%(random.randint(10000, 100000))
+    message['Subject'] = "灵溪加速器@海外网络加速账户过期提醒&&&邮件编号:%s"%(random.randint(10000, 100000))
     message['From'] = sender
     message['To'] = receiver
 
