@@ -9,29 +9,27 @@ def send_email(receiver, count, password):
     sender = count
 
     contant = """<div dir="ltr">
-        ﻿亲，您在本站的账号已<font color="darkred">过期!</font>
+        ﻿亲，---您在本站的账号已<font color="darkred">过期!</font>
         <br><br>
         <font color="red">为不影响您的正常使用，请及时登录网站购买套餐后使用。</font><br><br>
 		续费请 <a href="https://www.yzyyds.xyz" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.yzyyds.xyz&amp;source=gmail&amp;ust=1638599219093000&amp;usg=AOvVaw1_o00JKGkAtJHfAIdy040a">登录官网</a>，点击首页<font color="red">'购买套餐'</font> 按钮<br> <br>
 		续费后请<font color="red">稍等两分钟,</font>然后重新连接客户端 <br> <br>
 		官方网址： <a href="https://www.yzyyds.xyz" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.yzyyds.xyz&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://www.yzyyds.xyz</a><div class="yj6qo"></div><div class="adL"> <br> <br>
-        有疑问，请联系网站右下角在线客服 <br> <br>
-        <br> <br>
-        -------------------------------------
-        ﻿柚子加速器 - 提供专业海外网站加速服务，稳定运行六年!
-        -------------------------------------
+        ***************
+        有疑问，请联系网站右下角在线客服 <br>
+        ***************
 		<br><br>
 		畅游Google, Youtube, Facebook, Twitter, Instagram, 谷歌学术等海外网站
 		<br><br>
-		**支持 苹果（iphone, Mac），安卓，电脑等客户端
+		&&支持 苹果（iphone, Mac），安卓，电脑等客户端
 		<br><br>
-        &&邮件发送时间：<font color="darkred">%s</font>
+        %%邮件发送时间：<font color="darkred">%s</font>
         """%(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime()))
 
 
     # 拼接邮件内容
     message = MIMEText(contant, "html", "utf-8")
-    message['Subject'] = "柚子加速器****账户过期提醒&,邮件编号:%s"%(random.randint(10000, 100000))
+    message['Subject'] = "柚子加速器%%%账户过期提醒&邮件编号:%s"%(random.randint(10000, 100000))
     message['From'] = sender
     message['To'] = receiver
 
@@ -55,7 +53,7 @@ if __name__ == '__main__':
     lines = f.readlines()
     for user in lines:
         send_email(user, 'yze@yzyyds.xyz', 'nx_Admin123')
-        time.sleep(random.uniform(602, 850))
+        time.sleep(random.uniform(502, 830))
     # for i in range(0, len(lines) - 1, 5):
     #     send_email(lines[i], 'tnmcer@outlook.com', 'Endc98765')
     #     time.sleep(random.uniform(432, 450))
