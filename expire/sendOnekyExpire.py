@@ -9,7 +9,7 @@ def send_email(receiver, count, password):
     sender = count
 
     contant = """<div dir="ltr">
-        ﻿亲，您在小火箭加速器账户已经过期！
+        ﻿亲，您在小火箭账户已经过期！
         <br><br>
         ----------
         如需继续使用，请登录网站续费后，重新连接即可。<<br><br>
@@ -31,7 +31,7 @@ def send_email(receiver, count, password):
 
     # 拼接邮件内容
     message = MIMEText(contant, "html", "utf-8")
-    message['Subject'] = "小火箭加速器账户已过期@邮件编号::%s"%(random.randint(4000, 80000))
+    message['Subject'] = "小火箭账户已过期@邮件编号::%s"%(random.randint(4000, 80000))
     message['From'] = sender
     message['To'] = receiver
 
