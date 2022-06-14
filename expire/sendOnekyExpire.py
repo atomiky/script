@@ -31,7 +31,7 @@ def send_email(receiver, count, password):
 
     # 拼接邮件内容
     message = MIMEText(contant, "html", "utf-8")
-    message['Subject'] = "下火箭加速器账户已过期@邮件编号::%s"%(random.randint(4000, 80000))
+    message['Subject'] = "小火箭加速器账户已过期@邮件编号::%s"%(random.randint(4000, 80000))
     message['From'] = sender
     message['To'] = receiver
 
@@ -50,7 +50,7 @@ if __name__ == '__main__':
     # f = open("../data/unSignUser.txt", "r")
     lines = f.readlines()
     for user in lines:
-        send_email(user, 'guoqi@nxyyds.xyz', 'nx_Admin123')
+        send_email(user, 'hello@yzyyds.xyz', 'nx_Admin123')
         time.sleep(random.uniform(650, 850))
     # for i in range(0, len(lines) - 1, 5):
     #     send_email(lines[i], 'nxkys01@zoho.com.cn', 'fVz3eH6vBj3u')
