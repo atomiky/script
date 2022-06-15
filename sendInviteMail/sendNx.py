@@ -11,17 +11,17 @@ def send_email(receiver, count, password):
     contant = """<div dir="ltr">
             你好，灵溪加速器，专业团队运营，稳定运行六年，真诚为您服务!
     		<br><br>
-    		畅游Google, Youtube, Facebook, Twitter, Instagram, 谷歌学术等海外网站。
+    		畅游Google, Youtube, Facebook, Twitter, Instagram, 谷歌学术等海外网站。/
     		<br><br>
     		支持 苹果，安卓，电脑等客户端同时连接!
     		<br><br>
-    		黄金套餐：美国，日本，新加坡等国家节点，月付价格低至:12元
+    		黄金套餐：美国，日本，新加坡等国家节点，月付价格低至:12元~
     		<br><br>
-    		砖石套餐：美国，日本，香港，韩国，新加坡等国家节点，支持8k视频，月付价格低至:18元
+    		砖石套餐：美国，日本，香港，韩国，新加坡等国家节点，支持8k视频，月付价格低至:18元~
     		<br><br>
     		官方网址： <a href="https://nxkys.com" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.nxkys.com&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://nxkys.com</a><div class="yj6qo"></div><div class="adL">
             <br><br>
-            复制上面官方网址去浏览器打开
+            复制上面官方网址去浏览器打开?
             <br><br>
             已解锁p站，奈飞等网站!!!
             <br><br>
@@ -31,13 +31,14 @@ def send_email(receiver, count, password):
             <br> <br>
     		邮件发送时间为：<font color="darkred">%s</font>
     		<br><br>
+    		&&&&￥##@@*（&）&*ihu（*）0@#@*moak、‘cs
             </div></div>
             """ % (time.strftime('%Y-%m-%d %H:%M:%S', time.localtime()))
 
 
     # 拼接邮件内容
     message = MIMEText(contant, "html", "utf-8")
-    message['Subject'] = "灵溪加速器 @ 最稳定的海外网络加速器--邮件编号:%s"%(random.randint(10000, 100000))
+    message['Subject'] = "灵溪加速器 - 最最稳定的海外网络加速器--邮件编号:%s"%(random.randint(10000, 100000))
     message['From'] = sender
     message['To'] = receiver
 
