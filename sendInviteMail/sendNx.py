@@ -1,5 +1,6 @@
 import random
 import smtplib
+import string
 import time
 from email.mime.text import MIMEText
 
@@ -7,7 +8,7 @@ from email.mime.text import MIMEText
 def send_email(receiver, count, password):
     # 接收方／发送方，接收方是一个list，可以接受多个数值
     sender = count
-
+    ran_str = ''.join(random.sample(string.ascii_letters + string.digits, 20))
     contant = """<div dir="ltr">
             你好，灵溪加速器，专业团队运营，稳定运行六年，真诚为您服务!
     		<br><br>
@@ -31,9 +32,9 @@ def send_email(receiver, count, password):
             <br> <br>
     		邮件发送时间为：<font color="darkred">%s</font>
     		<br><br>
-    		&&&&￥##@@*（&）&*ihu（*）0@#@*moak、‘cs
+    		随机字符: %s
             </div></div>
-            """ % (time.strftime('%Y-%m-%d %H:%M:%S', time.localtime()))
+            """ % (time.strftime('%Y-%m-%d %H:%M:%S', time.localtime()), ran_str)
 
 
     # 拼接邮件内容
@@ -55,7 +56,7 @@ def send_email(receiver, count, password):
 
 if __name__ == '__main__':
     f = open("/var/script/data/invite/nx.txt", "r")
-    # f = open("../data/nxUnSingIN3.txt", "r")
+    # f = open("../data/invite/nx.txt", "r")
     lines = f.readlines()
     for user in lines:
         send_email(user, 'nx@atmky.shop', 'nx_Admin123')

@@ -1,5 +1,6 @@
 import random
 import smtplib
+import string
 import time
 from email.mime.text import MIMEText
 
@@ -7,7 +8,7 @@ from email.mime.text import MIMEText
 def send_email(receiver, count, password):
     # 接收方／发送方，接收方是一个list，可以接受多个数值
     sender = count
-
+    ran_str = ''.join(random.sample(string.ascii_letters + string.digits, 20))
     contant = """<div dir="ltr">
         ﻿亲，您在本站的账号已过期!
         <br><br>
@@ -23,7 +24,9 @@ def send_email(receiver, count, password):
 		&&支持 苹果（iphone, Mac），安卓，电脑等客户端
 		<br><br>
         %%邮件发送时间：<font color="darkred">%s</font>
-        """%(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime()))
+        <br><br>
+        随机字符: %s
+        """%(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime()), ran_str)
 
 
     # 拼接邮件内容
