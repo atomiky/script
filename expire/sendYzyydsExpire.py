@@ -16,21 +16,17 @@ def send_email(receiver, count, password):
 		续费请 <a href="https://www.yzyyds.xyz" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.yzyyds.xyz&amp;source=gmail&amp;ust=1638599219093000&amp;usg=AOvVaw1_o00JKGkAtJHfAIdy040a">登录官网</a>，点击首页<font color="red">'购买套餐'</font> 按钮<br> <br>
 		续费后请<font color="red">稍等两分钟,</font>然后重新连接客户端 <br> <br>
 		官方网址： <a href="https://www.yzyyds.xyz" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.yzyyds.xyz&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://www.yzyyds.xyz</a><div class="yj6qo"></div><div class="adL"> <br> <br>
-        有疑问，请联系网站右下角在线客服。
 		<br><br>
-		畅游Google, Youtube, Facebook, Twitter, Instagram, 谷歌学术等海外网站
+        畅游海外网站:ins,推特,脸书,谷歌等
+		<br>
+		支持 苹果（iphone, Mac），安卓，电脑等客户端
 		<br><br>
-        随机字符: %s
-		<br><br>
-		&&支持 苹果（iphone, Mac），安卓，电脑等客户端
-		<br><br>
-        %%邮件发送时间：<font color="darkred">%s</font>
-        """%(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime()), ran_str)
+        """
 
 
     # 拼接邮件内容
     message = MIMEText(contant, "html", "utf-8")
-    message['Subject'] = "柚子加速器&&账号过期提醒-邮件编号为:%s"%(random.randint(4000, 80000))
+    message['Subject'] = "柚子加速器-账号过期提醒"
     message['From'] = sender
     message['To'] = receiver
 
