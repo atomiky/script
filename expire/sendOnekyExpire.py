@@ -12,7 +12,6 @@ def send_email(receiver, count, password):
     contant = """<div dir="ltr">
         ﻿亲，您在小火箭账户已经过期！
         <br><br>
-        ----------
         如需继续使用，请登录网站续费后，重新连接即可。<<br><br>
 		续费请 <a href="https://www.oneky.xyz" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.oneky.xyz&amp;source=gmail&amp;ust=1638599219093000&amp;usg=AOvVaw1_o00JKGkAtJHfAIdy040a">登录官网</a>，点击<font color="red">'购买套餐'</font> <br> <br>
 		续费后请<font color="red">稍等两分钟,</font>然后重新连接客户端 <br> <br>
@@ -22,19 +21,18 @@ def send_email(receiver, count, password):
         如有疑问，请联系网站右下角在线客服！
 		<br><br>
 		已经解锁p站，奈飞等海外网站!!!
-		************************
+		<br><br>
+        随机字符: %s
 		<br><br>
 		支持 苹果，安卓，电脑等客户端同时使用。
 		<br><br>
         邮件发送时间：<font color="darkred">%s</font>
-        <br><br>
-        随机字符: %s
         """%(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime()),ran_str)
 
 
     # 拼接邮件内容
     message = MIMEText(contant, "html", "utf-8")
-    message['Subject'] = "小火箭账户已过期@邮件编号::%s"%(random.randint(4000, 80000))
+    message['Subject'] = "小火箭账户过期,邮件编号::%s"%(random.randint(4000, 80000))
     message['From'] = sender
     message['To'] = receiver
 
@@ -53,7 +51,7 @@ if __name__ == '__main__':
     # f = open("../data/unSignUser.txt", "r")
     lines = f.readlines()
     for user in lines:
-        send_email(user, 'hello@yzyyds.xyz', 'nx_Admin123')
+        send_email(user, 'xhj@entkys.xyz', 'nx_Admin123')
         time.sleep(random.uniform(650, 850))
     # for i in range(0, len(lines) - 1, 5):
     #     send_email(lines[i], 'nxkys01@zoho.com.cn', 'fVz3eH6vBj3u')
