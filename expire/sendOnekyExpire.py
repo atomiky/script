@@ -17,6 +17,8 @@ def send_email(receiver, count, password):
 		小火箭加速器-官方网址： <a href="https://www.oneky.xyz" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.oneky.xyz&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://www.oneky.xyz</a><div class="yj6qo"></div><div class="adL"> <br><br>
         请复制上方链接去浏览器打开
         <br><br>
+        小火箭套餐：美国，日本，香港，韩国，新加坡，英国，法国，印度等国家节点，支持8k视频，月付价格低至:18元~
+        <br><br>
         畅游海外网站：ins，推特，脸书，谷歌等!!!
 		<br>
 		支持 苹果，安卓，电脑等客户端同时使用
