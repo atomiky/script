@@ -16,7 +16,12 @@ def send_email(receiver, count, password):
 		续费请 <a href="https://www.yzyyds.xyz" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.yzyyds.xyz&amp;source=gmail&amp;ust=1638599219093000&amp;usg=AOvVaw1_o00JKGkAtJHfAIdy040a">登录官网</a>，点击首页<font color="red">'购买套餐'</font> 按钮<br> <br>
 		续费后请<font color="red">稍等两分钟,</font>然后重新连接客户端 <br> <br>
 		官方网址： <a href="https://www.yzyyds.xyz" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.yzyyds.xyz&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://www.yzyyds.xyz</a><div class="yj6qo"></div><div class="adL"> <br> <br>
-        畅游海外网站:ins,推特,脸书,谷歌等。
+        <br><br>
+    	白银套餐：美国，日本，新加坡等国家节点，月付价格低至:15元~
+    	<br><br>
+    	黄金套餐：美国，日本，香港，韩国，新加坡等国家节点，支持8k视频，月付价格低至:20元~
+    	<br><br>
+        畅游海外网站:ins,推特,脸书,谷歌等!
 		<br>
 		支持 苹果（iphone, Mac），安卓，电脑等客户端
 		<br><br>
