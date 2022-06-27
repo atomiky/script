@@ -27,8 +27,8 @@ def send_email(receiver, count, password):
             已解锁p站，奈飞等网站!!!
             <br><br>
     		灵溪加速器防走失网址：<a href="https://awkys.github.io" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://awkys.github.io&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://awkys.github.io</a><div class="yj6qo"></div><div class="adL">
-            <br><br>
-            如您有任何疑问，请联系网站右下角在线客服!
+            <br>
+            有任何疑问，请联系网站右下角在线客服!
             <br> <br>
     		邮件发送时间为：<font color="darkred">%s</font>
     		<br><br>
@@ -39,7 +39,7 @@ def send_email(receiver, count, password):
 
     # 拼接邮件内容
     message = MIMEText(contant, "html", "utf-8")
-    message['Subject'] = "灵溪加速器 - 最最稳定的海外网络加速器--邮件编号:%s"%(random.randint(10000, 100000))
+    message['Subject'] = "灵溪加速器 - 最最最稳定的海外网络加速器--邮件编号:%s"%(random.randint(100, 1000))
     message['From'] = sender
     message['To'] = receiver
 
