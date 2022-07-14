@@ -14,7 +14,8 @@ def getExpireUser(db):
     # SQL 查询语句
     sql = """SELECT email
        FROM `user`
-       where class_expire < date(now())"""
+       where class_expire < date(now())
+       and t>0"""
 
     # 执行SQL语句
     cursor.execute(sql)
@@ -29,7 +30,7 @@ def getExpireUser(db):
 
 
 if __name__ == '__main__':
-    db = "oneky608"
+    db = "yz0714"
     user = getExpireUser(db)
     expireUser = []
     url = "../data/expire/" + db + "Expire.txt"

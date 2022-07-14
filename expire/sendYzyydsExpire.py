@@ -16,6 +16,9 @@ def send_email(receiver, count, password):
 		续费后请<font color="red">稍等两分钟,</font>然后重新连接客户端 <br> <br>
 		官方网址： <a href="https://www.yzyyds.xyz" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.yzyyds.xyz&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://www.yzyyds.xyz</a><div class="yj6qo"></div><div class="adL"> <br> <br>
         <br><br>
+        柚子加速器防走失网址：<a href="https://onekys.github.io" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://onekys.github.io&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://onekys.github.io</a><div class="yj6qo"></div><div class="adL">
+        <br>
+        <br><br>
     	白银套餐：美国，日本，新加坡等国家节点，月付价格低至:15元
     	<br><br>
     	黄金套餐：美国，日本，香港，韩国，新加坡等国家节点，支持8k视频，月付价格低至:20元
@@ -23,14 +26,12 @@ def send_email(receiver, count, password):
         畅游海外网站:ins,推特,脸书,谷歌等!
 		<br>
 		支持苹果（iphone, Mac），安卓，电脑等客户端
-		<br>
-		48蚊7放假沃尔、39i4jwofuwfjowjfoiwfwfhwufwfjwo493082&*^(*#*(#*((*
         """
 
 
     # 拼接邮件内容
     message = MIMEText(contant, "html", "utf-8")
-    message['Subject'] = "加速器过期提醒"
+    message['Subject'] = "柚子加速器过期提醒"
     message['From'] = sender
     message['To'] = receiver
 
@@ -49,23 +50,12 @@ def send_email(receiver, count, password):
         print(receiver)
 
 if __name__ == '__main__':
-    f = open("/var/script/data/expire/yz608Expire.txt", "r")
+    f = open("/var/script/data/expire/0714yzUsedExpire.txt", "r")
     # f = open("../data/unSignUser.txt", "r")
     lines = f.readlines()
-    for user in lines:
-        send_email(user, 'iyz@yzyyds.xyz', 'nx_Admin123')
-        time.sleep(random.uniform(502, 830))
-    # for i in range(0, len(lines) - 1, 5):
-    #     send_email(lines[i], 'tnmcer@outlook.com', 'Endc98765')
-    #     time.sleep(random.uniform(432, 450))
-    #     send_email(lines[i + 1], 'scmnvr@outlook.com', 'Huin123456')
-    #     time.sleep(random.uniform(420, 445))
-    #     send_email(lines[i + 2], 'uterncv@outlook.com', 'Tiun123456')
-    #     time.sleep(random.uniform(410, 460))
-    #     send_email(lines[i + 3], 'iurtdcd@outlook.com', 'Tiun123456')
-    #     time.sleep(random.uniform(400, 455))
-    #     send_email(lines[i + 4], 'uternbr@outlook.com', 'Tiun123456')
-    #     time.sleep(random.uniform(405, 445))
+    for user in reversed(lines):
+        send_email(user, 'yz@avanter.xyz', 'nx_Admin123')
+        time.sleep(random.uniform(482, 810))
 
 
 

@@ -20,11 +20,13 @@ def send_email(receiver, count, password):
         …………………………………………………………………………………………………………………………………………
         灵溪官方网址： <a href="https://nxkys.com" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://nxkys.com&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://nxkys.com</a><div class="yj6qo"></div><div class="adL"> <br> <br>
         请复制上面方地址，去浏览器打开访问
-        <br> <br>
+        <br><br>
+        灵溪加速器防走失网址：<a href="https://awkys.github.io" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://awkys.github.io&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://awkys.github.io</a><div class="yj6qo"></div><div class="adL">
+        <br>
         ********************
         已经解锁p站，奈飞等网站!
         ********************
-        <br> <br>
+        <br><br>
         如有疑问，请联系网站右下角在线客服 
 		<br><br>
 		科学上网，畅游Google, Youtube, Facebook, Twitter, Instagram, 谷歌学术等海外网站。
@@ -52,24 +54,12 @@ def send_email(receiver, count, password):
         print(receiver)
 
 if __name__ == '__main__':
-    f = open("/var/script/data/expire/nx608Expire.txt", "r")
-    # f = open("../data/unSignUser.txt", "r")
+    f = open("/var/script/data/expire/0714nxUsedExpire.txt", "r")
+    # f = open("../data/expire/0714nxUsedExpire.txt", "r")
     lines = f.readlines()
-    for user in lines:
+    for user in reversed(lines):
         send_email(user, 'nxe@nxbest.men', 'nx_Admin123')
         time.sleep(random.uniform(632, 850))
-    # for i in range(0, len(lines) - 1, 5):
-    #     send_email(lines[i], 'nxkys01@zoho.com.cn', 'fVz3eH6vBj3u')
-    #     time.sleep(random.uniform(432, 450))
-    #     send_email(lines[i + 1], 'nxyyds@zoho.com.cn', 'H6EvV3hBEaVu')
-    #     time.sleep(random.uniform(420, 445))
-    #     send_email(lines[i + 2], 'bestone@zoho.com.cn', 'D3PLnrLKAiss')
-    #     time.sleep(random.uniform(410, 460))
-    #     send_email(lines[i + 3], 'ocbest@zoho.com.cn', 'ntEpKQfZBrdL')
-    #     time.sleep(random.uniform(400, 455))
-    #     send_email(lines[i + 4], 'tkyyds@zoho.com.cn', 'W4pnjz1PZXRW')
-    #     time.sleep(random.uniform(405, 445))
-
 
 
 
