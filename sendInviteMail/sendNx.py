@@ -39,7 +39,7 @@ def send_email(receiver, count, password):
 
     # 拼接邮件内容
     message = MIMEText(contant, "html", "utf-8")
-    message['Subject'] = "灵溪加速器 - 最最最稳定的海外网络加速器--邮件编号:%s"%(random.randint(100, 1000))
+    message['Subject'] = "灵溪加速器 - 最稳定的海外网络加速器--邮件编号:%s"%(random.randint(100, 1000))
     message['From'] = sender
     message['To'] = receiver
 
