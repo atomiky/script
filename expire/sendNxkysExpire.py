@@ -27,7 +27,7 @@ def send_email(receiver, count, password):
         已经解锁p站，奈飞等网站!
         ********************
         <br><br>
-        如有疑问，请联系网站右下角在线客服 
+        如有任何疑问，请联系网站右下角在线客服 
 		<br><br>
 		科学上网，畅游Google, Youtube, Facebook, Twitter, Instagram, 谷歌学术等海外网站。
 		<br><br>
