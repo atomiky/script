@@ -15,7 +15,7 @@ def send_email(receiver, count, password):
 		续费请 <a href="https://www.oneky.xyz" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.oneky.xyz&amp;source=gmail&amp;ust=1638599219093000&amp;usg=AOvVaw1_o00JKGkAtJHfAIdy040a">登录官网</a>，点击<font color="red">'购买套餐'</font> <br> <br>
 		续费后请<font color="red">稍等两分钟,</font>然后重新连接客户端 <br> <br>
 		小火箭加速器-官方网址： <a href="https://www.oneky.xyz" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.oneky.xyz&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://www.oneky.xyz</a><div class="yj6qo"></div><div class="adL"> <br><br>
-        请复制上方链接去浏览器打开
+        复制上方链接去浏览器打开
         <br><br>
         <br><br>
         小火箭加速器防走失网址：<a href="https://onekyss.github.io" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://onekyss.github.io&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://onekyss.github.io</a><div class="yj6qo"></div><div class="adL">
