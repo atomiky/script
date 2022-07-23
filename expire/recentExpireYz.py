@@ -1,7 +1,7 @@
 import random
 import smtplib
 import string
-from datetime import time
+import time
 from email.mime.text import MIMEText
 
 import pymysql
