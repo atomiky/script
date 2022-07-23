@@ -40,11 +40,11 @@ def send_email(receiver, count, password):
     sender = count
     ran_str = ''.join(random.sample(string.ascii_letters + string.digits, 20))
     contant = """<div dir="ltr">
-        ﻿亲，你在小火箭加速器的账号已过期，请登录网站，购买套餐后继续使用。
+        你在小火箭的账号已过期，请登录网站，购买套餐后继续使用。
         <br>
 		官方网址： <a href="https://www.oneky.xyz" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.oneky.xyz&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://www.oneky.xyz</a><div class="yj6qo"></div><div class="adL">
-        <br><br>
-        小火箭加速器防走失网址：<a href="https://onekyss.github.io" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://onekyss.github.io&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://onekyss.github.io</a><div class="yj6qo"></div><div class="adL">
+        <br>
+        小火箭防走失网址：<a href="https://onekyss.github.io" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://onekyss.github.io&amp;source=gmail&amp;ust=1638599219094000&amp;usg=AOvVaw2ZcvjoZ_OBnw_4TE1vJZHf">https://onekyss.github.io</a><div class="yj6qo"></div><div class="adL">
         """
 
 
