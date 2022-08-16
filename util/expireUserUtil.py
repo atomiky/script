@@ -5,7 +5,7 @@ def getExpireUser(db):
     # 打开数据库连接
     db = pymysql.connect(host='localhost',
                          user='root',
-                         password='123456',
+                         password='12345678',
                          database=db)
 
     # 使用cursor()方法获取操作游标
@@ -30,7 +30,7 @@ def getExpireUser(db):
 
 
 if __name__ == '__main__':
-    db = "yz0714"
+    db = "nx0816"
     user = getExpireUser(db)
     expireUser = []
     url = "../data/expire/" + db + "Expire.txt"

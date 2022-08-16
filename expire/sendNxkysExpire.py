@@ -39,7 +39,7 @@ def send_email(receiver, count, password):
 
     # 拼接邮件内容
     message = MIMEText(contant, "html", "utf-8")
-    message['Subject'] = "灵溪加速器@海外网络加速账户过期提醒&&&邮件编号:%s"%(random.randint(10000, 100000))
+    message['Subject'] = "灵溪加速器-海外网络加速账户过期提醒&邮件编号:%s"%(random.randint(10000, 100000))
     message['From'] = sender
     message['To'] = receiver
 
@@ -54,11 +54,11 @@ def send_email(receiver, count, password):
         print(receiver)
 
 if __name__ == '__main__':
-    f = open("/var/script/data/expire/0714nxUsedExpire.txt", "r")
+    f = open("/var/script/data/expire/nx0816Expire.txt", "r")
     # f = open("../data/expire/0714nxUsedExpire.txt", "r")
     lines = f.readlines()
     for user in reversed(lines):
-        send_email(user, 'nxe@nxbest.men', 'nx_Admin123')
+        send_email(user, 'nx@atmky.shop', 'nx_Admin123')
         time.sleep(random.uniform(632, 850))
 
 
